@@ -10,8 +10,17 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hi!");
-            Console.WriteLine("Jo!");
+            int a = 0;
+            int b = 0;
+            int c = 0;
+            Console.Write("First Number ");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("First Number - ", a);
+            Console.Write("Second Number ");
+            b = Convert.ToInt32(Console.ReadLine());
+            c = a - b;
+            Console.Write("{0} - {1} = {2}", a,b,c);
+            Console.ReadKey();
         }
     }
 }
